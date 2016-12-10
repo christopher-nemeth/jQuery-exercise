@@ -9,12 +9,13 @@ $("#submit-btn").click(changeBackground)
 // define that function that runs when the button is clicked	
 function changeBackground(){
 	event.preventDefault();
-	// $(".city-type").text("Enter a city name...");
-	// $(':input').removeAttr('placeholder');
-	//cityName input from the input element
+	
+	// cityName input from the input element
 	var body = $("body");
 	var city = $("#city-type").val();
+	// converts all input text to lowercase
 	city = city.toLowerCase();
+	// clears input after click
 	var input = $(this).prev('input:first');
         input.val("");
 	
